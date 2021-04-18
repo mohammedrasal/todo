@@ -1,0 +1,89 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #eec0c6;
+    background-image: linear-gradient(315deg,#eec0c6 0%,#7ee8fa 74%);
+    
+}
+.container{
+    max-width: 500px;
+}
+.k-title{
+    text-align: center;
+    margin-top: 30px;
+}
+.k-header{
+    background: #fff;
+    height: 30px;
+
+}
+.k-header input{
+    height: 30px;
+    border: none;
+    text-align: center;
+
+}
+.k-header #add-btn{
+    height: 30px;
+    width: 102px;
+    border: none;
+    background: black;
+    color: #fff;
+
+}
+.k-header #add-btn:hover{
+  
+   color : black;
+    background: #fff;
+
+}
+
+.k-items-list{
+    text-align: left;
+    list-style: none;
+    perspective: 1000px;
+}
+.k-items-list li{
+    background-color: #ffac81;
+    background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 74%);
+    padding: 10px 15px;
+    margin: 4px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    animation: 0.3s ease-in-out;
+    
+}
+
+.fa-trash ,.fa-edit{
+    margin-left: 10px;
+    float: right;
+    color: red;
+}
+.fa-trash:hover, .fa-edit:hover{
+    color: rgb(151, 6, 6);
+}
+
+@keyframes slideIn{
+    from{
+    opacity: 0;
+    transform: rotateX(60deg) translateY(-10px);
+    }to{
+        opacity: 1;
+        transform: rotateX(0deg) translateY(0px);
+    }
+
+}
+.slideOut{
+    transform: rotateX(60deg) translateY(-10px);
+    opacity: 0;
+    transition: 1s;
+}
